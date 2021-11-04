@@ -1,0 +1,31 @@
+<! DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title> REGISTRO DE TRABAJADORES</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static' , filename="registro.css")}}" />
+</head>
+<body>
+<div class="container">  
+  <form id="contact" action="/añadir" method="post">
+    <h2>REGISTRO DE TRABAJADORES</h2>
+    <fieldset>
+       <input style="text-transform: uppercase;" type="text" name="nombre" placeholder="NOMBRE">
+    </fieldset>
+    <fieldset>
+      <input type="text" name="codigo" placeholder="CÓDIGO DE TARJETA"class="form-control">
+    </fieldset>
+    <fieldset>
+      <button type="submit"class="btn btn-primary btn-block"> Guardar</button>
+    </fieldset>
+    <fieldset>
+  </form>
+  <form action="/logout" method="GET">
+     <button type="submit"class="btn btn-primary btn-block">Logout</button>
+    </fieldset>
+  </form>
+</div>
+</body>
+<html>
